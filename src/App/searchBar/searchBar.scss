@@ -1,8 +1,18 @@
 .searchBar {
     position: absolute;
-    top: 0.8rem;
+    top: 50px;
     text-align: center;
-    background: lightgreen;
-    height: 0.6rem;
+    background: #e0e1e5;
+    height: 40px;
+    line-height: 40px;
     width: 100%;
+    input {
+        outline: none;
+        border: none;
+        width: 80%;
+        height: 20px;
+        border-radius: 10px;
+        padding: 0 10px;
+        margin-top: 10px;
+    }
 }

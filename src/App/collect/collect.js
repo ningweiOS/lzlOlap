@@ -8,10 +8,9 @@ export default class Collect extends Component {
         this._setHeight();
     }
     _setHeight = () => {
-        let dpr = Math.ceil(devicePixelRatio.toFixed(1));
-        let screenH = screen.height * dpr / 100; // 转换成rem单位
-        let targetH = screenH - 2.2;
-        ReactDom.findDOMNode(this.refs.listWarp).style.height = targetH + 'rem';
+        let screenH = screen.height; // 转换成rem单位
+        let targetH = screenH - 140;
+        ReactDom.findDOMNode(this.refs.listWarp).style.height = targetH + 'px';
     }
     render() {
         return (
